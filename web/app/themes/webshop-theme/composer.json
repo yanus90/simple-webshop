@@ -38,9 +38,16 @@
       "App\\": "app/"
     }
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/ptrckvzn/sage-woocommerce"
+    }
+  ],
   "require": {
     "php": "^7.2.5",
-    "roots/acorn": "^1.0.1"
+    "roots/acorn": "^1.0.1",
+    "roots/sage-woocommerce": "^1.0"
   },
   "require-dev": {
     "filp/whoops": "^2.7",
