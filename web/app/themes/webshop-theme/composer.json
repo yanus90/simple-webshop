@@ -47,7 +47,7 @@
   "require": {
     "php": "^7.2.5",
     "roots/acorn": "^1.0.1",
-    "roots/sage-woocommerce": "^1.0"
+    "roots/sage-woocommerce": "dev-sage-10"
   },
   "require-dev": {
     "filp/whoops": "^2.7",
