@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-get_header( 'shop' );
+do_action('get_header', 'shop');
 
 /**
  * Hook: woocommerce_before_main_content.
@@ -102,4 +102,4 @@ do_action( 'woocommerce_after_main_content' );
  */
 do_action( 'woocommerce_sidebar' );
 
-get_footer( 'shop' );
+do_action('get_footer', 'shop');
