@@ -1,0 +1,18 @@
+.section-products {
+    .card {
+        position: relative;
+        margin-bottom: 1.75rem;
+        box-shadow: 0 0 1.25rem rgba($bg-dark, .05);
+        border: 1px solid #eff2f7;
+        border-radius: .75rem;
+
+        .card-img-top {
+            border-top-left-radius: calc(.75rem - 1px);
+            border-top-right-radius: calc(.75rem - 1px);
+        }
+
+        .card-body {
+            padding: 1.75rem;
+        }
+    }
+}

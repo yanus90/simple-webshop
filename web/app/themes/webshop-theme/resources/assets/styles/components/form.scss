@@ -1,0 +1,144 @@
+.form-control:focus:-ms-input-placeholder {
+    color: #cbd5e0
+}
+
+.form-control:focus::-ms-input-placeholder {
+    color: #cbd5e0
+}
+
+.form-control:focus::placeholder {
+    color: #cbd5e0
+}
+
+.form-control-muted {
+    background-color: #edf0f5;
+    border-color: #edf0f5
+}
+
+.form-control-muted:focus {
+    background-color: #edf0f5
+}
+
+.form-control-emphasized {
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 2px 4px rgba(0, 0, 0, .1)
+}
+
+.form-control-emphasized:focus {
+    background-color: #fff;
+    border-color: transparent;
+    box-shadow: 0 0 0 2px #008aff
+}
+
+.form-control-flush {
+    padding: 0;
+    border-width: 0;
+    background-color: transparent;
+    box-shadow: none
+}
+
+.form-control-flush:focus {
+    background-color: transparent;
+    box-shadow: none;
+    border-width: 0
+}
+
+textarea[resize=none] {
+    resize: none!important
+}
+
+textarea[resize=both] {
+    resize: both!important
+}
+
+textarea[resize=vertical] {
+    resize: vertical!important
+}
+
+textarea[resize=horizontal] {
+    resize: horizontal!important
+}
+
+.form-control-xl {
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: .75rem
+}
+
+.form-primary .form-control {
+    color: #fff;
+    background-color: #0069c2;
+    border: 1px solid #0069c2
+}
+
+.form-primary .form-control:focus {
+    background-color: #005ead;
+    border: 1px solid #005ead
+}
+
+.form-primary .form-control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, .8)
+}
+
+.form-primary .form-control::-ms-input-placeholder {
+    color: rgba(255, 255, 255, .8)
+}
+
+.form-primary .form-control::placeholder {
+    color: rgba(255, 255, 255, .8)
+}
+
+.form-warning .form-control {
+    color: #fff;
+    background-color: #ffa900;
+    border: 1px solid #ffa900
+}
+
+.form-warning .form-control:focus {
+    background-color: #ea9c00;
+    border: 1px solid #ea9c00
+}
+
+.form-warning .form-control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, .8)
+}
+
+.form-warning .form-control::-ms-input-placeholder {
+    color: rgba(255, 255, 255, .8)
+}
+
+.form-warning .form-control::placeholder {
+    color: rgba(255, 255, 255, .8)
+}
+
+.form-danger .form-control {
+    color: #fff;
+    background-color: #ee1e34;
+    border: 1px solid #ee1e34
+}
+
+.form-danger .form-control:focus {
+    background-color: #e61228;
+    border: 1px solid #e61228
+}
+
+.form-danger .form-control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, .8)
+}
+
+.form-danger .form-control::-ms-input-placeholder {
+    color: rgba(255, 255, 255, .8)
+}
+
+.form-danger .form-control::placeholder {
+    color: rgba(255, 255, 255, .8)
+}
+
+.form-control-label {
+    color: #718096;
+    font-size: .875rem;
+    font-weight: 500;
+    text-transform: none
+}

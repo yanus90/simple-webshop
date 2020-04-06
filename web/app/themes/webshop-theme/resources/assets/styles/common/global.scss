@@ -20,3 +20,9 @@ a {
     background-color: $color-value;
   }
 }
+
+.header,
+.navbar,
+.navbar-top {
+    transition: all .2s ease;
+}

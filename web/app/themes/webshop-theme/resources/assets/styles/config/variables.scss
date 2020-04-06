@@ -2,6 +2,55 @@
  * Variables
  */
 
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
 $theme-colors: (
-  primary: #525ddc,
+    primary: #171347,
+    third: #273444,
 );
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+$breadcrumb-divider: quote(">");
+
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+    xxs: 0,
+    xs: 375px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px
+);
+
+$container-max-widths: (
+    xs: 345px,
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1380px
+);
+
+/** Nunito */
+$font-family-base:        "Nunito", sans-serif;
+$font-size-base:          1rem;
+$font-weight-light:       300;
+$font-weight-regular:     400;
+$font-weight-semi-bold:   600;
+$font-weight-bold:        700;
+$font-weight-extra-bold:  800;
+
+/** Font Awesome 5 */
+$fontawesome:             "Font Awesome 5 Pro";
+
+/** Colors */
+$primary: #008aff;
+$bg-dark: #171347;
+$bg-section-secondary: #fafbfe;
+$third: #273444;

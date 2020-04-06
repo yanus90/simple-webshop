@@ -1,0 +1,18 @@
+.bg {
+    &-cover {
+        position: relative;
+        background-repeat: no-repeat;
+    }
+
+    &-size {
+        &--cover {
+            background: no-repeat center center/cover;
+        }
+    }
+
+    &-section {
+        &-secondary {
+            background: $bg-section-secondary !important;
+        }
+    }
+}

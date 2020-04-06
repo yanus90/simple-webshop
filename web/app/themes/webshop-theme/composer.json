@@ -47,6 +47,7 @@
   "require": {
     "php": "^7.2.5",
     "roots/acorn": "^1.0.1",
+    "log1x/navi": "^1.0",
     "roots/sage-woocommerce": "dev-sage-10"
   },
   "require-dev": {

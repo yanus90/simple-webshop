@@ -1,0 +1,60 @@
+.hover-translate-y-n3:hover,
+.translate-y-n3 {
+    transform: translateY(-3px)!important;
+}
+
+.hover-translate-y-n10:hover,
+.translate-y-n10 {
+    transform: translateY(-10px)!important;
+}
+
+.hover-translate-x-50:hover,
+.translate-x-50 {
+    transform: translateX(50%)!important;
+}
+
+/** Shape container */
+.shape-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    transform: translateZ(0);
+    overflow: hidden;
+
+    svg {
+        display: block;
+        fill: #fff;
+        pointer-events: none;
+        vertical-align: baseline
+    }
+
+    &.shape {
+        &-position {
+            &-top {
+                top: 0;
+                margin-top: -1px
+            }
+
+            &-bottom {
+                bottom: 0;
+                margin-bottom: -1px
+            }
+        }
+
+        &-orientation {
+            &-inverse {
+                transform: rotate(180deg)
+            }
+        }
+
+        &-line {
+            min-height: 19px
+        }
+    }
+}
+
+.fill-section-secondary {
+    fill: #fafbfe!important
+}

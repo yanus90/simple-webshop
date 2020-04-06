@@ -1,0 +1,36 @@
+.slice {
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    &-xl {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    &-lg {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    &-sm {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &-video {
+        min-height: 600px;
+    }
+
+    &:not(.border-top),
+    &:not(.border-bottom),
+    &:not(.delimiter-bottom),
+    &:not([class*=bg-]),
+    &:not(.section-rotate)+.slice,
+    &:not(.border-top),
+    &:not(.border-bottom),
+    &:not(.delimiter-top),
+    &:not([class*=bg-]) {
+        padding-top: 0;
+    }
+}

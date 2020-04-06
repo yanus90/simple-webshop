@@ -1,36 +1,256 @@
-/**
- * Button
- */
+///**
+// * Button
+// */
+//
+//.wp-block-button {
+//  &__link {
+//    font-size: $btn-font-size;
+//    line-height: $btn-line-height;
+//    padding-bottom: $btn-padding-y;
+//    padding-left: $btn-padding-x;
+//    padding-right: $btn-padding-x;
+//    padding-top: $btn-padding-y;
+//
+//    &:hover {
+//      text-decoration: none;
+//    }
+//  }
+//
+//  &.is-style-outline {
+//    .wp-block-button__link {
+//      @include button-outline-variant(
+//        map-get($theme-colors, 'primary'),
+//        map-get($theme-colors, 'light')
+//      );
+//    }
+//  }
+//
+//  &.is-style-solid {
+//    .wp-block-button__link {
+//      @include button-variant(
+//        map-get($theme-colors, 'primary'),
+//        map-get($theme-colors, 'light')
+//      );
+//    }
+//  }
+//}
 
-.wp-block-button {
-  &__link {
-    font-size: $btn-font-size;
-    line-height: $btn-line-height;
-    padding-bottom: $btn-padding-y;
-    padding-left: $btn-padding-x;
-    padding-right: $btn-padding-x;
-    padding-top: $btn-padding-y;
+.btn {
+    position: relative;
+    transition: all .2s ease;
 
-    &:hover {
-      text-decoration: none;
+    &-xs {
+        padding: .375rem 1rem;
+        font-size: .75rem;
+        line-height: 1.5;
+        border-radius: .375rem
     }
-  }
 
-  &.is-style-outline {
-    .wp-block-button__link {
-      @include button-outline-variant(
-        map-get($theme-colors, 'primary'),
-        map-get($theme-colors, 'light')
-      );
-    }
-  }
+    &-xl {
+        padding: 1.5rem 2rem;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        border-radius: .75rem;
 
-  &.is-style-solid {
-    .wp-block-button__link {
-      @include button-variant(
-        map-get($theme-colors, 'primary'),
-        map-get($theme-colors, 'light')
-      );
+        @include media-breakpoint-down(lg) {
+            font-size: calc(1.275rem + .3vw);
+        }
     }
-  }
+
+    &-nobg {
+        padding: 0;
+        background: 0 0!important;
+
+        &:hover {
+            background: 0 0!important;
+            border-color: transparent!important;
+        }
+
+        &--hover {
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .btn {
+        transition: none
+    }
+}
+
+.btn+.btn {
+    margin-left: .5rem
+}
+
+.btn-group {
+    &>.btn {
+        margin: 0
+    }
+}
+
+.btn-icon .btn-inner--text:not(:first-child) {
+    margin-left: .75em
+}
+
+.btn-icon .btn-inner--text:not(:last-child) {
+    margin-right: .75em
+}
+
+.btn-icon .btn-inner--icon img {
+    width: 20px
+}
+
+.btn-icon-only {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0
+}
+
+.btn-icon-only.btn-xs {
+    width: 2rem;
+    height: 2rem
+}
+
+.btn-group-sm>.btn-icon-only.btn,
+.btn-icon-only.btn-sm {
+    width: 2.4375rem;
+    height: 2.4375rem
+}
+
+.btn-group-lg>.btn-icon-only.btn,
+.btn-icon-only.btn-lg {
+    width: 4rem;
+    height: 4rem
+}
+
+.btn-square-lg {
+    width: 150px!important;
+    height: 150px!important
+}
+
+.btn-square {
+    width: 108px!important;
+    height: 108px!important;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+
+.btn-square-sm {
+    width: 50px!important;
+    height: 50px!important
+}
+
+.btn-square-xs {
+    width: 25px!important;
+    height: 25px!important
+}
+
+.btn-animated {
+    position: relative;
+    overflow: hidden
+}
+
+.btn-animated .btn-inner--visible {
+    position: relative
+}
+
+.btn-animated .btn-inner--hidden {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.btn-animated-x .btn-inner--visible {
+    right: 0;
+    transition: right .3s ease 0s
+}
+
+.btn-animated-x .btn-inner--hidden {
+    right: -100%;
+    transition: right .3s ease 0s
+}
+
+.btn-animated-x:hover .btn-inner--hidden {
+    right: 0
+}
+
+.btn-animated-x:hover .btn-inner--visible {
+    right: 150%
+}
+
+.btn-animated-y .btn-inner--visible {
+    top: 0;
+    transition: top .3s ease 0s
+}
+
+.btn-animated-y .btn-inner--hidden {
+    left: 0;
+    top: -100%;
+    transition: top .3s ease
+}
+
+.btn-animated-y:hover .btn-inner--hidden {
+    top: 50%
+}
+
+.btn-animated-y:hover .btn-inner--visible {
+    top: 100px
+}
+
+.btn-action-label .btn-label:hover {
+    background: 0 0;
+    color: #2d3748
+}
+
+.btn-action-label .btn-secondary:hover {
+    color: #008aff
+}
+
+.btn-icon-label {
+    position: relative
+}
+
+.btn-icon-label .btn-inner--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    line-height: 1;
+    border-radius: 0;
+    text-align: center;
+    margin: 0;
+    width: 2.5rem;
+    background-color: rgba(0, 0, 0, .1)
+}
+
+.btn-icon-label .btn-inner--icon:not(:first-child) {
+    right: 0;
+    top: 0;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit
+}
+
+.btn-icon-label .btn-inner--icon:not(:last-child) {
+    left: 0;
+    top: 0;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit
+}
+
+.btn-icon-label .btn-inner--text:not(:first-child) {
+    padding-left: 2.5rem;
+}
+
+.btn-icon-label .btn-inner--text:not(:last-child) {
+    padding-right: 2.5rem;
 }

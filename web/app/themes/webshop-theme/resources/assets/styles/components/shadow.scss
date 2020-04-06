@@ -1,0 +1,49 @@
+[class*=shadow] {
+    transition: all .2s ease;
+}
+
+.shadow {
+    &-xl {
+        box-shadow: 0 20px 25px -5px rgba($bg-dark, .1), 0 10px 10px -5px rgba($bg-dark, .04) !important;
+    }
+
+    &-2xl {
+        box-shadow: 0 25px 50px -12px rgba($bg-dark, .25) !important;
+    }
+}
+
+.hover-shadow {
+    &-sm {
+        &:hover {
+            box-shadow: 0 .125rem .25rem rgba($bg-dark, .08) !important;
+        }
+    }
+
+    &-lg {
+        &:hover {
+            box-shadow: 0 1rem 3rem rgba($bg-dark, .125) !important;
+        }
+    }
+
+    &-xl {
+        &:hover {
+            box-shadow: 0 20px 25px -5px rgba($bg-dark, .1), 0 10px 10px -5px rgba($bg-dark, .04) !important;
+        }
+    }
+
+    &-2xl {
+        &:hover {
+            box-shadow: 0 25px 50px -12px rgba($bg-dark, .25) !important;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 0 1.25rem rgba($bg-dark, .05) !important;
+    }
+
+    &-none {
+        &:hover {
+            box-shadow: none !important;
+        }
+    }
+}
